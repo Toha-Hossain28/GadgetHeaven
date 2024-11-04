@@ -3,7 +3,8 @@ import MainLayout from "../Layouts/MainLayout";
 import ErrorPage from "../Pages/ErrorPage";
 import CategoryPage from "../Pages/CategoryPage";
 import AllProduct from "../Pages/AllProduct";
-import ProductDetails from "../Layouts/ProductDetails";
+import ProductDetails from "../Pages/ProductDetails";
+import SmartPhone from "../Pages/SmartPhone";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
           {
             path: "/",
             element: <AllProduct />,
+            loader: () => fetch("/fakeData.json"),
+          },
+          {
+            path: "/:category",
+            element: <SmartPhone />,
             loader: () => fetch("/fakeData.json"),
           },
         ],
@@ -39,6 +45,7 @@ const router = createBrowserRouter([
   {
     path: "/products/:product_id",
     element: <ProductDetails />,
+    loader: () => fetch("/fakeData.json"),
   },
 ]);
 

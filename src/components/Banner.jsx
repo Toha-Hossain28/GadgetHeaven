@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 
 function Banner() {
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
   return (
     <>
       <div className="hero bg-[#9538E2] min-h-[300px] pb-[200px] pt-10 rounded-b-box">
@@ -22,9 +22,7 @@ function Banner() {
         </div>
       </div>
       <div
-        className={`max-w-[1110px] mx-auto rounded-box h-[610px] p-6 border-2 border-white bg-gray-100 relative -top-52 bg-opacity-25 ${
-          pathname != "/" ? "hidden" : ""
-        }`}
+        className={`max-w-[1110px] mx-auto rounded-box h-[610px] p-6 border-2 border-white bg-gray-100 relative -top-52 bg-opacity-25`}
       >
         <div className="w-full h-full">
           <img src="./banner.jpg" alt="" className="w-full h-full rounded-lg" />

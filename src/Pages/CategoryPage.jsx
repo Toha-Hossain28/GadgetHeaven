@@ -23,7 +23,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/laptop"}
+                to={"/Laptop"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -35,7 +35,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/tab"}
+                to={"/Tablet"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -47,7 +47,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/phone"}
+                to={"/Smartphone"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -59,7 +59,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/watch"}
+                to={"/Smartwatch"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -67,6 +67,30 @@ function CategoryPage() {
                 }
               >
                 Smart Watch
+              </NavLink>
+            </div>
+            <div className="grid place-items-center">
+              <NavLink
+                to={"/Macbook"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
+                    : "rounded-full bg-[#09080F0D] py-3 px-6 text-center w-full"
+                }
+              >
+                Mackbook
+              </NavLink>
+            </div>
+            <div className="grid place-items-center">
+              <NavLink
+                to={"/Ipad"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
+                    : "rounded-full bg-[#09080F0D] py-3 px-6 text-center w-full"
+                }
+              >
+                Ipad
               </NavLink>
             </div>
           </div>
