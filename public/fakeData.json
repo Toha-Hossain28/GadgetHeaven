@@ -1,0 +1,234 @@
+[
+  {
+    "product_id": "SP001",
+    "product_title": "Smartphone X Pro",
+    "product_image": "smartphone_x_pro.jpg",
+    "category": "Smartphone",
+    "price": 999.99,
+    "description": "A flagship smartphone with cutting-edge technology and an immersive display.",
+    "specification": [
+      "6.7-inch OLED display",
+      "Triple-lens 50MP + 12MP + 10MP camera system",
+      "128GB/256GB/512GB storage options",
+      "5G connectivity",
+      "4000mAh battery with fast charging",
+      "Wireless charging support",
+      "In-display fingerprint sensor",
+      "Water and dust resistance (IP68)"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "SP002",
+    "product_title": "Smartphone Y Lite",
+    "product_image": "smartphone_y_lite.jpg",
+    "category": "Smartphone",
+    "price": 499.99,
+    "description": "A budget-friendly smartphone with excellent performance for everyday tasks.",
+    "specification": [
+      "6.1-inch HD+ display",
+      "Dual-lens 48MP + 5MP camera",
+      "64GB/128GB storage options",
+      "4G LTE connectivity",
+      "3500mAh battery",
+      "Face unlock and rear fingerprint sensor",
+      "Dual SIM support"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "SP003",
+    "product_title": "Smartphone Z Ultra",
+    "product_image": "smartphone_z_ultra.jpg",
+    "category": "Smartphone",
+    "price": 799.99,
+    "description": "A premium smartphone with a sleek design and powerful camera capabilities.",
+    "specification": [
+      "6.5-inch Super AMOLED display",
+      "Quad-lens 64MP + 16MP + 8MP + 2MP camera system",
+      "256GB storage, expandable via microSD",
+      "5G and Wi-Fi 6 support",
+      "4500mAh battery with wireless charging",
+      "Glass and metal build, IP67 rated",
+      "Stereo speakers"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": "TB001",
+    "product_title": "Tablet A10",
+    "product_image": "tablet_a10.jpg",
+    "category": "Tablet",
+    "price": 549.99,
+    "description": "A versatile tablet perfect for both productivity and entertainment.",
+    "specification": [
+      "10.5-inch IPS display",
+      "Octa-core processor",
+      "64GB/128GB expandable storage",
+      "12MP rear camera, 8MP front camera",
+      "7500mAh battery",
+      "Stylus pen support",
+      "USB-C fast charging"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "TB002",
+    "product_title": "Tablet B Pro",
+    "product_image": "tablet_b_pro.jpg",
+    "category": "Tablet",
+    "price": 899.99,
+    "description": "A high-end tablet with a stunning display and powerful performance.",
+    "specification": [
+      "12.9-inch Liquid Retina display",
+      "M1 chip for lightning-fast performance",
+      "256GB/512GB/1TB storage options",
+      "Dual 13MP + 10MP rear cameras",
+      "10000mAh battery with all-day usage",
+      "Magic Keyboard and Pencil support",
+      "Face ID security"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "TB003",
+    "product_title": "Tablet C Mini",
+    "product_image": "tablet_c_mini.jpg",
+    "category": "Tablet",
+    "price": 329.99,
+    "description": "A compact tablet designed for portability and ease of use.",
+    "specification": [
+      "8.3-inch HD display",
+      "Quad-core processor",
+      "32GB/64GB storage options",
+      "8MP rear camera, 5MP front camera",
+      "4000mAh battery",
+      "Lightweight and easy to hold",
+      "Wi-Fi and Bluetooth 5.0"
+    ],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": "LP001",
+    "product_title": "Laptop Z Ultra",
+    "product_image": "laptop_z_ultra.jpg",
+    "category": "Laptop",
+    "price": 1299.99,
+    "description": "A high-performance laptop designed for professionals and gamers alike.",
+    "specification": [
+      "15.6-inch 4K UHD display",
+      "Intel Core i7 13th Gen processor",
+      "16GB/32GB DDR5 RAM",
+      "1TB SSD storage",
+      "NVIDIA RTX 3060 GPU",
+      "Backlit keyboard and fingerprint sensor",
+      "Thunderbolt 4 ports",
+      "Wi-Fi 6E and Bluetooth 5.2"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "LP002",
+    "product_title": "Laptop X Light",
+    "product_image": "laptop_x_light.jpg",
+    "category": "Laptop",
+    "price": 749.99,
+    "description": "An ultra-light laptop ideal for students and professionals on the go.",
+    "specification": [
+      "13.3-inch Full HD display",
+      "Intel Core i5 11th Gen processor",
+      "8GB DDR4 RAM",
+      "512GB SSD storage",
+      "Integrated Intel Iris Xe graphics",
+      "Up to 12 hours battery life",
+      "Slim and portable design",
+      "USB-C and HDMI ports"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "LP003",
+    "product_title": "Laptop Y Workstation",
+    "product_image": "laptop_y_workstation.jpg",
+    "category": "Laptop",
+    "price": 1799.99,
+    "description": "A powerful workstation laptop built for creative professionals.",
+    "specification": [
+      "17.3-inch QHD display",
+      "AMD Ryzen 9 processor",
+      "32GB/64GB DDR5 RAM",
+      "2TB NVMe SSD storage",
+      "NVIDIA Quadro RTX graphics",
+      "Multiple USB and Thunderbolt ports",
+      "Advanced thermal cooling",
+      "Windows 11 Pro"
+    ],
+    "availability": false,
+    "rating": 4.8
+  },
+  {
+    "product_id": "SW001",
+    "product_title": "Smartwatch G5",
+    "product_image": "smartwatch_g5.jpg",
+    "category": "Smartwatch",
+    "price": 249.99,
+    "description": "A sleek smartwatch with advanced health tracking and long battery life.",
+    "specification": [
+      "1.8-inch AMOLED display",
+      "Heart rate and SpO2 monitoring",
+      "GPS and NFC support",
+      "5-day battery life",
+      "Water-resistant up to 50 meters",
+      "Customizable watch faces",
+      "Built-in speaker and microphone"
+    ],
+    "availability": false,
+    "rating": 4.2
+  },
+  {
+    "product_id": "SW002",
+    "product_title": "Smartwatch Active 3",
+    "product_image": "smartwatch_active_3.jpg",
+    "category": "Smartwatch",
+    "price": 199.99,
+    "description": "A sporty smartwatch designed for fitness enthusiasts with real-time activity tracking.",
+    "specification": [
+      "1.4-inch LCD display",
+      "24/7 heart rate monitoring",
+      "Multi-sport modes",
+      "4-day battery life",
+      "Waterproof up to 30 meters",
+      "Sleep and stress tracking",
+      "Bluetooth 5.1"
+    ],
+    "availability": true,
+    "rating": 4.0
+  },
+  {
+    "product_id": "SW003",
+    "product_title": "Smartwatch Elite 2",
+    "product_image": "smartwatch_elite_2.jpg",
+    "category": "Smartwatch",
+    "price": 349.99,
+    "description": "A premium smartwatch with stylish design and comprehensive health features.",
+    "specification": [
+      "1.6-inch curved OLED display",
+      "ECG and blood pressure monitoring",
+      "LTE connectivity",
+      "7-day battery life",
+      "Music storage and playback",
+      "Interchangeable straps",
+      "Built-in voice assistant"
+    ],
+    "availability": true,
+    "rating": 4.6
+  }
+]
