@@ -1,7 +1,16 @@
 import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Banner() {
-  // const { pathname } = useLocation();
+  const { pathname } = useLocation();
+  const [showImg, setShowImg] = useState(false);
+  useEffect(() => {
+    if (pathname === "/" || pathname.includes("/categories")) {
+      setShowImg(true);
+    } else {
+      setShowImg(false);
+    }
+  }, [pathname]);
   return (
     <>
       <div className="hero bg-[#9538E2] min-h-[300px] pb-[200px] pt-10 rounded-b-box">
@@ -22,7 +31,9 @@ function Banner() {
         </div>
       </div>
       <div
-        className={`max-w-[1110px] mx-auto rounded-box h-[610px] p-6 border-2 border-white bg-gray-100 relative -top-52 bg-opacity-25`}
+        className={`max-w-[1110px] mx-auto rounded-box h-[610px] p-6 border-2 border-white bg-gray-100 relative -top-52 bg-opacity-25 ${
+          showImg ? "" : "hidden"
+        }`}
       >
         <div className="w-full h-full">
           <img src="./banner.jpg" alt="" className="w-full h-full rounded-lg" />

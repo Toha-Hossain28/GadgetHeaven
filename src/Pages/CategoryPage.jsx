@@ -23,7 +23,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/Laptop"}
+                to={"categories/Laptop"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -35,7 +35,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/Tablet"}
+                to={"categories/Tablet"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -47,7 +47,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/Smartphone"}
+                to={"categories/Smartphone"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -59,7 +59,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/Smartwatch"}
+                to={"categories/Smartwatch"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -71,7 +71,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/Macbook"}
+                to={"categories/Macbook"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
@@ -83,7 +83,7 @@ function CategoryPage() {
             </div>
             <div className="grid place-items-center">
               <NavLink
-                to={"/Ipad"}
+                to={"categories/Ipad"}
                 className={({ isActive }) =>
                   isActive
                     ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"

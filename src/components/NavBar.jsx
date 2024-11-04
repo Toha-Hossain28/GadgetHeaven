@@ -5,10 +5,9 @@ function NavBar() {
   // console.log(pathname);
   return (
     <div
-      className={`navbar
-      ${pathname == "/" ? "bg-[#9538E2]" : "text-black"}
-      }
-      rounded-t-box px-32`}
+      className={`navbar rounded-t-box px-32 ${
+        pathname == "/" ? "bg-[#9538E2] text-white" : "text-black"
+      }`}
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -32,14 +31,7 @@ function NavBar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <NavLink
-              to={"/"}
-              className={({ isActive }) =>
-                isActive ? "underline text-purple-400" : ""
-              }
-            >
-              Home
-            </NavLink>
+            <NavLink to={"/"}>Home</NavLink>
             <NavLink
               to={"/statistics"}
               className={({ isActive }) => (isActive ? "underline" : "")}
@@ -62,34 +54,51 @@ function NavBar() {
             </NavLink>
           </div>
         </div>
-        <Link
-          to={"/"}
-          className={`${
-            pathname == "/"
-              ? "btn btn-ghost text-xl font-bold text-white"
-              : "text-black btn btn-ghost text-xl font-bold"
-          }`}
-        >
+        <Link to={"/"} className={`btn btn-ghost text-xl font-bold`}>
           Gadget Heaven
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul
-          className={`menu menu-horizontal px-1 text-base font-medium ${
-            pathname == "/" ? "text-white" : "text-black"
-          }`}
-        >
+        <ul className={`menu menu-horizontal px-1 text-base font-bold`}>
           <li>
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                isActive ? "underline text-purple-900 " : ""
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/statistics"}>Statistics</NavLink>
+            <NavLink
+              to={"/statistics"}
+              className={({ isActive }) =>
+                isActive ? "underline text-purple-900" : ""
+              }
+            >
+              Statistics
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/dashboard"}>Dashboard</NavLink>
+            <NavLink
+              to={"/dashboard"}
+              className={({ isActive }) =>
+                isActive ? "underline text-purple-900" : ""
+              }
+            >
+              Dashboard
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/myWish"}>My Wish</NavLink>
+            <NavLink
+              to={"/myWish"}
+              className={({ isActive }) =>
+                isActive ? "underline text-purple-900" : ""
+              }
+            >
+              My Wish
+            </NavLink>
           </li>
         </ul>
       </div>

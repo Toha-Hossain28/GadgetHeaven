@@ -5,6 +5,7 @@ import CategoryPage from "../Pages/CategoryPage";
 import AllProduct from "../Pages/AllProduct";
 import ProductDetails from "../Pages/ProductDetails";
 import SmartPhone from "../Pages/SmartPhone";
+import DashboardLayout from "../Layouts/DashboardLayout";
 
 const router = createBrowserRouter([
   {
@@ -22,23 +23,11 @@ const router = createBrowserRouter([
             loader: () => fetch("/fakeData.json"),
           },
           {
-            path: "/:category",
+            path: "categories/:category",
             element: <SmartPhone />,
             loader: () => fetch("/fakeData.json"),
           },
         ],
-      },
-      {
-        path: "/statistics",
-        element: <>hello</>,
-      },
-      {
-        path: "/dashboard",
-        element: <>hello</>,
-      },
-      {
-        path: "/myWish",
-        element: <>hello</>,
       },
     ],
   },
@@ -46,6 +35,28 @@ const router = createBrowserRouter([
     path: "/products/:product_id",
     element: <ProductDetails />,
     loader: () => fetch("/fakeData.json"),
+  },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <p>cart</p>,
+      },
+      {
+        path: "/dashboard/wishlist",
+        element: <p>wish</p>,
+      },
+    ],
+  },
+  {
+    path: "/statistics",
+    element: <>hello</>,
+  },
+  {
+    path: "/myWish",
+    element: <>hello</>,
   },
 ]);
 

@@ -12,7 +12,7 @@ function ProductDetails() {
   const product = data.filter((product) => product.product_id === productId);
   // console.log(product);
   return (
-    <>
+    <div className="max-w-[1600px] border-x-[30px] border-t-[30px]  border-transparent mx-auto">
       <NavBar />
       <div className="bg-[#9538E2] text-center pt-8">
         <h3 className="font-bold text-[32px] text-white">Product Details</h3>
@@ -25,7 +25,7 @@ function ProductDetails() {
         <DetailProductCard product={product} />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
