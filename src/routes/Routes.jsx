@@ -8,6 +8,7 @@ import SmartPhone from "../Pages/SmartPhone";
 import DashboardLayout from "../Layouts/DashboardLayout";
 import CartBox from "../Pages/CartBox";
 import WishList from "../Pages/WishList";
+import Statistics from "../Pages/Statistics";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <CategoryPage />,
+        loader: () => fetch("/menu.json"),
         children: [
           {
             path: "/",
@@ -33,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/statistics",
-        element: <>statistic</>,
+        element: <Statistics />,
       },
       {
         path: "/myWish",

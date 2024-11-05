@@ -1,0 +1,34 @@
+{
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "link": "categories/Laptop"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "link": "categories/Smartphone"
+    },
+    {
+      "id": 3,
+      "name": "Smart Watch",
+      "link": "categories/Smartwatch"
+    },
+    {
+      "id": 4,
+      "name": "Tablet",
+      "link": "categories/Tablet"
+    },
+    {
+      "id": 5,
+      "name": "Ipad",
+      "link": "categories/Ipad"
+    },
+    {
+      "id": 6,
+      "name": "Macbook",
+      "link": "categories/Macbook"
+    }
+  ]
+}

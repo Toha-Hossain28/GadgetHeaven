@@ -2,7 +2,7 @@
   {
     "product_id": "SP001",
     "product_title": "Smartphone X Pro",
-    "product_image": "smartphone_x_pro.jpg",
+    "product_image": "https://i.etsystatic.com/23523144/r/il/84cf37/2361366132/il_fullxfull.2361366132_9x8a.jpg",
     "category": "Smartphone",
     "price": 999.99,
     "description": "A flagship smartphone with cutting-edge technology and an immersive display.",
@@ -22,7 +22,7 @@
   {
     "product_id": "SP002",
     "product_title": "Smartphone Y Lite",
-    "product_image": "smartphone_y_lite.jpg",
+    "product_image": "https://i.etsystatic.com/23523144/r/il/84cf37/2361366132/il_fullxfull.2361366132_9x8a.jpg",
     "category": "Smartphone",
     "price": 499.99,
     "description": "A budget-friendly smartphone with excellent performance for everyday tasks.",
@@ -41,7 +41,7 @@
   {
     "product_id": "SP003",
     "product_title": "Smartphone Z Ultra",
-    "product_image": "smartphone_z_ultra.jpg",
+    "product_image": "https://i.etsystatic.com/23523144/r/il/84cf37/2361366132/il_fullxfull.2361366132_9x8a.jpg",
     "category": "Smartphone",
     "price": 799.99,
     "description": "A premium smartphone with a sleek design and powerful camera capabilities.",
@@ -60,7 +60,7 @@
   {
     "product_id": "TB001",
     "product_title": "Tablet A10",
-    "product_image": "tablet_a10.jpg",
+    "product_image": "https://i.etsystatic.com/28615394/r/il/e29577/3335842619/il_fullxfull.3335842619_8oj9.jpg",
     "category": "Tablet",
     "price": 549.99,
     "description": "A versatile tablet perfect for both productivity and entertainment.",
@@ -79,7 +79,7 @@
   {
     "product_id": "TB002",
     "product_title": "Tablet B Pro",
-    "product_image": "tablet_b_pro.jpg",
+    "product_image": "https://i.etsystatic.com/28615394/r/il/e29577/3335842619/il_fullxfull.3335842619_8oj9.jpg",
     "category": "Tablet",
     "price": 899.99,
     "description": "A high-end tablet with a stunning display and powerful performance.",
@@ -98,7 +98,7 @@
   {
     "product_id": "TB003",
     "product_title": "Tablet C Mini",
-    "product_image": "tablet_c_mini.jpg",
+    "product_image": "https://i.etsystatic.com/28615394/r/il/e29577/3335842619/il_fullxfull.3335842619_8oj9.jpg",
     "category": "Tablet",
     "price": 329.99,
     "description": "A compact tablet designed for portability and ease of use.",
@@ -117,7 +117,7 @@
   {
     "product_id": "LP001",
     "product_title": "Laptop Z Ultra",
-    "product_image": "laptop_z_ultra.jpg",
+    "product_image": "https://gridfiti.com/wp-content/uploads/2021/11/Gridfiti_Blog_AestheticScreensavers_Hello.jpg",
     "category": "Laptop",
     "price": 1299.99,
     "description": "A high-performance laptop designed for professionals and gamers alike.",
@@ -137,7 +137,7 @@
   {
     "product_id": "LP002",
     "product_title": "Laptop X Light",
-    "product_image": "laptop_x_light.jpg",
+    "product_image": "https://gridfiti.com/wp-content/uploads/2021/11/Gridfiti_Blog_AestheticScreensavers_Hello.jpg",
     "category": "Laptop",
     "price": 749.99,
     "description": "An ultra-light laptop ideal for students and professionals on the go.",
@@ -157,7 +157,7 @@
   {
     "product_id": "LP003",
     "product_title": "Laptop Y Workstation",
-    "product_image": "laptop_y_workstation.jpg",
+    "product_image": "https://gridfiti.com/wp-content/uploads/2021/11/Gridfiti_Blog_AestheticScreensavers_Hello.jpg",
     "category": "Laptop",
     "price": 1799.99,
     "description": "A powerful workstation laptop built for creative professionals.",
@@ -177,7 +177,7 @@
   {
     "product_id": "SW001",
     "product_title": "Smartwatch G5",
-    "product_image": "smartwatch_g5.jpg",
+    "product_image": "https://imgcdn.stablediffusionweb.com/2024/9/20/e11843fb-779c-47c3-b64a-20c4c73be966.jpg",
     "category": "Smartwatch",
     "price": 249.99,
     "description": "A sleek smartwatch with advanced health tracking and long battery life.",
@@ -196,7 +196,7 @@
   {
     "product_id": "SW002",
     "product_title": "Smartwatch Active 3",
-    "product_image": "smartwatch_active_3.jpg",
+    "product_image": "https://imgcdn.stablediffusionweb.com/2024/9/20/e11843fb-779c-47c3-b64a-20c4c73be966.jpg",
     "category": "Smartwatch",
     "price": 199.99,
     "description": "A sporty smartwatch designed for fitness enthusiasts with real-time activity tracking.",
@@ -215,7 +215,7 @@
   {
     "product_id": "SW003",
     "product_title": "Smartwatch Elite 2",
-    "product_image": "smartwatch_elite_2.jpg",
+    "product_image": "https://imgcdn.stablediffusionweb.com/2024/9/20/e11843fb-779c-47c3-b64a-20c4c73be966.jpg",
     "category": "Smartwatch",
     "price": 349.99,
     "description": "A premium smartwatch with stylish design and comprehensive health features.",

@@ -17,11 +17,7 @@ function ProductCard({ product }) {
   return (
     <div className="card card-compact bg-base-100 shadow-xl">
       <figure className="p-6">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-          className="rounded-box"
-        />
+        <img src={product_image} className="rounded-box" />
       </figure>
       <div className="card-body">
         <h2 className="font-semibold text-2xl text-[#09080F] pl-2">

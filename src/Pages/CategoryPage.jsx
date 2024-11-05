@@ -1,6 +1,8 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 
 function CategoryPage() {
+  const data = useLoaderData();
+  const menus = data.menuItems;
   return (
     <div>
       <h2 className="font-bold text-4xl text-center mb-12">
@@ -21,19 +23,22 @@ function CategoryPage() {
                 All Product
               </NavLink>
             </div>
-            <div className="grid place-items-center">
-              <NavLink
-                to={"categories/Laptop"}
-                className={({ isActive }) =>
-                  isActive
-                    ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
-                    : "rounded-full bg-[#09080F0D] py-3 px-6 text-center w-full"
-                }
-              >
-                Laptop
-              </NavLink>
-            </div>
-            <div className="grid place-items-center">
+            {menus.map((menu) => (
+              <div className="grid place-items-center" key={menu.id}>
+                <NavLink
+                  to={menu.link}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-[#9538E2] rounded-full py-3 px-6 text-center w-full text-white"
+                      : "rounded-full bg-[#09080F0D] py-3 px-6 text-center w-full"
+                  }
+                >
+                  {menu.name}
+                </NavLink>
+              </div>
+            ))}
+
+            {/* <div className="grid place-items-center">
               <NavLink
                 to={"categories/Tablet"}
                 className={({ isActive }) =>
@@ -78,7 +83,7 @@ function CategoryPage() {
                     : "rounded-full bg-[#09080F0D] py-3 px-6 text-center w-full"
                 }
               >
-                Mackbook
+                Mac Book
               </NavLink>
             </div>
             <div className="grid place-items-center">
@@ -92,7 +97,7 @@ function CategoryPage() {
               >
                 Ipad
               </NavLink>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="h-full w-full col-span-10">

@@ -56,7 +56,9 @@ function DetailProductCard({ product }) {
       <Helmet>
         <title>Product Details</title>
       </Helmet>
-      <div className="col-span-2 h-full bg-gray-400">image</div>
+      <div className="col-span-2 h-full bg-gray-400 flex justify-center items-center">
+        <img src={product_image} alt="" className="" />
+      </div>
       <div className="col-span-3">
         <p className="font-semibold text-3xl text-[#09080F] mb-3">
           {product_title}

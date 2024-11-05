@@ -122,7 +122,7 @@ function NavBar() {
         <div className="navbar-end space-x-4">
           <NavLink
             to={"/dashboard"}
-            className="rounded-full bg-white px-2 py-2 flex justify-center items-center text-base relative"
+            className="rounded-full bg-white px-2 py-2 flex justify-center items-center text-base relative text-black"
           >
             <i className="fa-solid fa-cart-shopping"></i>
             <small
@@ -135,7 +135,7 @@ function NavBar() {
           </NavLink>
           <NavLink
             to={"/dashboard/wishlist"}
-            className="rounded-full bg-white px-2 py-2 flex justify-center items-center text-base"
+            className="rounded-full bg-white px-2 py-2 flex justify-center items-center text-base text-black"
           >
             <i className="fa-regular fa-heart"></i>
           </NavLink>
