@@ -1,3 +1,8 @@
+/* eslint-disable react/prop-types */
+import { useContext } from "react";
+import { ItemsContext } from "../ItemContext";
+import { useEffect, useState } from "react";
+
 function DetailProductCard({ product }) {
   const {
     product_id,
@@ -12,6 +17,38 @@ function DetailProductCard({ product }) {
   } = product[0];
 
   // console.log(availability);
+
+  const { cartItems, wishlistItems, addToCart, addToWishlist } =
+    useContext(ItemsContext);
+
+  const [cartBtnStatus, setCartBtnStatus] = useState(false);
+  const [wishBtnStatus, setWishBtnStatus] = useState(false);
+
+  const isInCart = cartItems.includes(product_id);
+  const isInWish = wishlistItems.includes(product_id);
+
+  useEffect(() => {
+    if (isInCart) {
+      setCartBtnStatus(true);
+    }
+    if (isInWish) {
+      setWishBtnStatus(true);
+    }
+  }, [isInCart, isInWish]);
+
+  const handleAddToCart = () => {
+    addToCart(product_id);
+    console.log("added");
+    console.log(cartItems);
+    setCartBtnStatus(true);
+  };
+
+  const handleAddToWishlist = () => {
+    addToWishlist(product_id);
+    console.log("wishlist update");
+    console.log(wishlistItems);
+    setWishBtnStatus(true);
+  };
 
   return (
     <div className="grid grid-cols-5 gap-6">
@@ -70,10 +107,18 @@ function DetailProductCard({ product }) {
           </p>
         </div>
         <div className="flex gap-4">
-          <button className="btn border border-purple-600 rounded-full bg-purple-600 outline-none text-white">
+          <button
+            className="btn border border-purple-600 rounded-full bg-purple-600 outline-none text-white"
+            disabled={cartBtnStatus}
+            onClick={handleAddToCart}
+          >
             Add to cart<i className="fa-solid fa-cart-shopping"></i>
           </button>
-          <button className="rounded-full px-4 py-2 flex justify-center items-center text-xl btn">
+          <button
+            className="rounded-full px-4 py-2 flex justify-center items-center text-xl btn"
+            disabled={wishBtnStatus}
+            onClick={handleAddToWishlist}
+          >
             <i className="fa-regular fa-heart"></i>
           </button>
         </div>

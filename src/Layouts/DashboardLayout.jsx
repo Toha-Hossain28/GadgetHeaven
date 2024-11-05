@@ -37,24 +37,7 @@ function DashboardLayout() {
           </NavLink>
         </div>
       </div>
-      <div className="flex mt-14 justify-between items-center">
-        <div className="font-bold text-2xl text-[#0B0B0B]">
-          {pathname == "/dashboard" ? "Cart" : "Wishlist"}
-        </div>
-        <div
-          className={`flex items-center gap-4  ${
-            pathname !== "/dashboard" ? "hidden" : ""
-          }`}
-        >
-          <p className="font-bold text-2xl text-[#0B0B0B]">Total Price:</p>
-          <button className="btn rounded-full border-[#9538E2] font-semibold text-lg text-[#9538E2]">
-            Sort by price <i className="fa-solid fa-arrow-up-wide-short"></i>
-          </button>
-          <button className="btn rounded-full bg-[#9538E2] font-semibold text-lg text-white">
-            Purchase
-          </button>
-        </div>
-      </div>
+
       <div>
         <Outlet />
       </div>

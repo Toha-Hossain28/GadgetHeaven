@@ -6,6 +6,8 @@ import AllProduct from "../Pages/AllProduct";
 import ProductDetails from "../Pages/ProductDetails";
 import SmartPhone from "../Pages/SmartPhone";
 import DashboardLayout from "../Layouts/DashboardLayout";
+import CartBox from "../Pages/CartBox";
+import WishList from "../Pages/WishList";
 
 const router = createBrowserRouter([
   {
@@ -42,11 +44,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <p>cart</p>,
+        element: <CartBox />,
+        loader: () => fetch("/fakeData.json"),
       },
       {
         path: "/dashboard/wishlist",
-        element: <p>wish</p>,
+        element: <WishList />,
+        loader: () => fetch("/fakeData.json"),
       },
     ],
   },
