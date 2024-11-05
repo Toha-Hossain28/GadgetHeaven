@@ -7,8 +7,15 @@ import CartItem from "../components/CartItem";
 import modal from "../assets/modal.png";
 
 function CartBox() {
-  const { cartItems, wishlistItems, addToCart, addToWishlist, setCartItems } =
-    useContext(ItemsContext);
+  const {
+    cartItems,
+    wishlistItems,
+    addToCart,
+    addToWishlist,
+    setCartItems,
+    allOrders,
+    setAllOrders,
+  } = useContext(ItemsContext);
 
   const data = useLoaderData();
   const { pathname } = useLocation();
@@ -101,6 +108,8 @@ function CartBox() {
               <button
                 className="btn w-full outline-none rounded-full"
                 onClick={() => {
+                  const newOrders = [...allOrders, ...cartedItems];
+                  setAllOrders(newOrders);
                   setCartItems([]);
                   setPurchaseBtn(true);
                   navigate("/");

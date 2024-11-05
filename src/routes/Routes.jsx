@@ -9,6 +9,7 @@ import DashboardLayout from "../Layouts/DashboardLayout";
 import CartBox from "../Pages/CartBox";
 import WishList from "../Pages/WishList";
 import Statistics from "../Pages/Statistics";
+import OrderHistory from "../Layouts/OrderHistory";
 
 const router = createBrowserRouter([
   {
@@ -37,19 +38,17 @@ const router = createBrowserRouter([
         path: "/statistics",
         element: <Statistics />,
       },
-      {
-        path: "/myWish",
-        element: <>hello</>,
-      },
     ],
   },
   {
     path: "/products/:product_id",
     element: <ProductDetails />,
+    errorElement: <ErrorPage />,
     loader: () => fetch("/fakeData.json"),
   },
   {
     path: "/dashboard",
+    errorElement: <ErrorPage />,
     element: <DashboardLayout />,
     children: [
       {
@@ -63,6 +62,10 @@ const router = createBrowserRouter([
         loader: () => fetch("/fakeData.json"),
       },
     ],
+  },
+  {
+    path: "/order_history",
+    element: <OrderHistory />,
   },
 ]);
 

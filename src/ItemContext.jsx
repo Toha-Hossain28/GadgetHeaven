@@ -8,6 +8,7 @@ export const ItemsContext = createContext();
 export function ItemsProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
   const [wishlistItems, setWishlistItems] = useState([]);
+  const [allOrders, setAllOrders] = useState([]);
 
   // Function to add an item to the cart
   const addToCart = (itemId) => {
@@ -47,6 +48,8 @@ export function ItemsProvider({ children }) {
         removeFromCart,
         removeFromWishlist,
         setCartItems,
+        allOrders,
+        setAllOrders,
       }}
     >
       {children}

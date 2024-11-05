@@ -14,7 +14,11 @@ function NavBar() {
   const [alterNav, setAlterNav] = useState(true);
 
   useEffect(() => {
-    if (pathname == "/" || pathname.includes("categories")) {
+    if (
+      pathname == "/" ||
+      pathname.includes("categories") ||
+      pathname == "/order_history"
+    ) {
       setAlterNav(false);
     }
   }, [pathname]);
@@ -109,12 +113,12 @@ function NavBar() {
             </li>
             <li>
               <NavLink
-                to={"/myWish"}
+                to={"/order_history"}
                 className={({ isActive }) =>
                   isActive ? "underline text-purple-900" : ""
                 }
               >
-                My Wish
+                Order_History
               </NavLink>
             </li>
           </ul>
