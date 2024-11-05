@@ -4,7 +4,7 @@ GadgetHeaven is a responsive e-commerce platform designed for buying the latest 
 
 ## Live Website Link
 
-[View GadgetHeaven Live](https://your-live-website-link.com)
+[View GadgetHeaven Live](https://a8-toha.netlify.app/)
 
 ## Requirement Document Link
 

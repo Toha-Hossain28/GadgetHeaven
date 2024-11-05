@@ -9,7 +9,9 @@ function CartItem({ item }) {
   const { product_title, price, description, product_image } = item;
   return (
     <div className="p-6 bg-white rounded-box grid grid-cols-12 gap-8 mt-5">
-      <div className="h-40 bg-gray-400 w-full rounded-lg col-span-3">img</div>
+      <div className="h-56 bg-gray-400 w-full rounded-lg col-span-3">
+        <img src={product_image} alt="" className="w-full h-full rounded-lg" />
+      </div>
       <div className="flex flex-col h-40 justify-between col-span-8">
         <h4 className="text-black font-bold text-4xl items-start">
           {product_title}
