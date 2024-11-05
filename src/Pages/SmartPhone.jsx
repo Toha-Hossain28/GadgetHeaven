@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCard";
 
 function SmartPhone() {
   const { category } = useParams();
-  console.log(category);
+  // console.log(category);
   const data = useLoaderData();
   const [products, setProducts] = useState([]);
 
@@ -17,7 +17,7 @@ function SmartPhone() {
   const filteredProduct = products.filter(
     (product) => product.category == category
   );
-  console.log(filteredProduct);
+  // console.log(filteredProduct);
   return (
     <>
       <div className="grid grid-cols-3 gap-6">

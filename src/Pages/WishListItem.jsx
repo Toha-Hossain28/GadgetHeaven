@@ -30,8 +30,8 @@ function WishListItem({ item }) {
 
   const handleAddToCart = () => {
     addToCart(product_id);
-    console.log("added");
-    console.log(cartItems);
+    // console.log("added");
+    // console.log(cartItems);
     setBtnStatus(true);
   };
   return (

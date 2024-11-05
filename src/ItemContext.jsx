@@ -46,6 +46,7 @@ export function ItemsProvider({ children }) {
         addToWishlist,
         removeFromCart,
         removeFromWishlist,
+        setCartItems,
       }}
     >
       {children}

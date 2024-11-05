@@ -31,6 +31,14 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {
+        path: "/statistics",
+        element: <>statistic</>,
+      },
+      {
+        path: "/myWish",
+        element: <>hello</>,
+      },
     ],
   },
   {
@@ -53,14 +61,6 @@ const router = createBrowserRouter([
         loader: () => fetch("/fakeData.json"),
       },
     ],
-  },
-  {
-    path: "/statistics",
-    element: <>hello</>,
-  },
-  {
-    path: "/myWish",
-    element: <>hello</>,
   },
 ]);
 

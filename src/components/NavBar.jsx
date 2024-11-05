@@ -1,5 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ItemsContext } from "../ItemContext";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -10,11 +10,20 @@ function NavBar() {
   const { cartItems, wishlistItems, addToCart, addToWishlist } =
     useContext(ItemsContext);
   // console.log(pathname);
+
+  const [alterNav, setAlterNav] = useState(true);
+
+  useEffect(() => {
+    if (pathname == "/" || pathname.includes("categories")) {
+      setAlterNav(false);
+    }
+  }, [pathname]);
+
   return (
     <>
       <div
         className={`navbar rounded-t-box px-32 ${
-          pathname == "/" ? "bg-[#9538E2] text-white" : "text-black"
+          !alterNav ? "bg-[#9538E2] text-white" : "text-black"
         }`}
       >
         <div className="navbar-start">
@@ -112,7 +121,7 @@ function NavBar() {
         </div>
         <div className="navbar-end space-x-4">
           <NavLink
-            to={"/cart"}
+            to={"/dashboard"}
             className="rounded-full bg-white px-2 py-2 flex justify-center items-center text-base relative"
           >
             <i className="fa-solid fa-cart-shopping"></i>
@@ -125,7 +134,7 @@ function NavBar() {
             </small>
           </NavLink>
           <NavLink
-            to={"/wishlist"}
+            to={"/dashboard/wishlist"}
             className="rounded-full bg-white px-2 py-2 flex justify-center items-center text-base"
           >
             <i className="fa-regular fa-heart"></i>

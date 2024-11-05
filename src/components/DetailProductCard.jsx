@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { ItemsContext } from "../ItemContext";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 function DetailProductCard({ product }) {
   const {
@@ -38,20 +39,23 @@ function DetailProductCard({ product }) {
 
   const handleAddToCart = () => {
     addToCart(product_id);
-    console.log("added");
-    console.log(cartItems);
+    // console.log("added");
+    // console.log(cartItems);
     setCartBtnStatus(true);
   };
 
   const handleAddToWishlist = () => {
     addToWishlist(product_id);
-    console.log("wishlist update");
-    console.log(wishlistItems);
+    // console.log("wishlist update");
+    // console.log(wishlistItems);
     setWishBtnStatus(true);
   };
 
   return (
     <div className="grid grid-cols-5 gap-6">
+      <Helmet>
+        <title>Product Details</title>
+      </Helmet>
       <div className="col-span-2 h-full bg-gray-400">image</div>
       <div className="col-span-3">
         <p className="font-semibold text-3xl text-[#09080F] mb-3">

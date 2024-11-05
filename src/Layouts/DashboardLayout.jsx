@@ -1,12 +1,16 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
 
 function DashboardLayout() {
   const { pathname } = useLocation();
   // console.log(location);
   return (
     <div className="max-w-[1600px] border-x-[30px] border-t-[30px]  border-transparent mx-auto">
+      <Helmet>
+        <title>Dashboard</title>
+      </Helmet>
       <NavBar />
       <div className="bg-[#9538E2] text-white text-center pt-10">
         <h3 className="font-bold text-3xl">Dashboard</h3>
