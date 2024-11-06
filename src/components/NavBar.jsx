@@ -14,14 +14,14 @@ function NavBar() {
   const [alterNav, setAlterNav] = useState(true);
 
   useEffect(() => {
-    if (
-      pathname == "/" ||
-      pathname.includes("categories") ||
-      pathname == "/order_history"
-    ) {
+    if (pathname == "/" || pathname.includes("/categories")) {
       setAlterNav(false);
+    } else {
+      setAlterNav(true);
     }
   }, [pathname]);
+
+  // console.log(pathname, alterNav);
 
   return (
     <>

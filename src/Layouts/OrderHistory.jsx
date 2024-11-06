@@ -18,14 +18,14 @@ function OrderHistory() {
 
   const navigate = useNavigate();
 
-  console.log(allOrders);
+  // console.log(allOrders);
   return (
     <div className="max-w-[1600px] border-x-[30px] border-t-[30px]  border-transparent mx-auto">
       <Helmet>
         <title>Order history</title>
       </Helmet>
       <NavBar />
-      <h1 className="bg-[#9538E2] font-bold text-5xl text-white text-center pt-10">
+      <h1 className="bg-[#9538E2] font-bold text-5xl text-white text-center pt-10 rounded-t-box">
         Your Previous History
       </h1>
       <div className="min-h-[350px] bg-[#9538E2] grid grid-cols-3  py-20 px-10 gap-5">
