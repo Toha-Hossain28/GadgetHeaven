@@ -50,12 +50,13 @@ function CartBox() {
   const handleSort = () => {
     const sortedItems = [...cartedItems].sort((a, b) => b.price - a.price);
     setCartedItems(sortedItems);
-    setSorted(true);
+    // setSorted(true);
   };
 
   const handlePurchase = () => {
     document.getElementById("my_modal_1").showModal();
     setPurchaseBtn(true);
+    setSorted(false);
   };
 
   return (
@@ -113,6 +114,7 @@ function CartBox() {
                   setCartItems([]);
                   setPurchaseBtn(true);
                   navigate("/");
+                  setSorted(false);
                 }}
               >
                 Close

@@ -83,22 +83,22 @@ function DetailProductCard({ product }) {
         </ul>
         <p className="font-bold text-[#09080F]">Rating</p>
         <div className="text-yellow-400 flex items-center text-xl mt-2 mb-4">
-          {rating > 1 ? (
+          {rating >= 1 ? (
             <i className="fa-solid fa-star"></i>
           ) : (
             <i className="fa-regular fa-star"></i>
           )}
-          {rating > 2 ? (
+          {rating >= 2 ? (
             <i className="fa-solid fa-star"></i>
           ) : (
             <i className="fa-regular fa-star"></i>
           )}
-          {rating > 3 ? (
+          {rating >= 3 ? (
             <i className="fa-solid fa-star"></i>
           ) : (
             <i className="fa-regular fa-star"></i>
           )}
-          {rating > 4 ? (
+          {rating >= 4 ? (
             <i className="fa-solid fa-star"></i>
           ) : (
             <i className="fa-regular fa-star"></i>
